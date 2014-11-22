@@ -3,13 +3,11 @@
 
 The pipeline is split in parts.
 
-run_std:              run standardisation on meshes generate by scard3d
-                       (uses Meshlab and VMTK)
+run_std:              run standardisation on input meshes (uses Meshlab and VMTK)
                        
-run_currents:         currents registration
-                       (uses deformetrica)
+run_currents:         currents registration  (uses deformetrica)
                        
-run_sum:              make template disk (SUM)
+run_sum:              make template SUM
 
 run_quantification:   quantify circumferential coverage, longitudinal coverage and area coverage.
 
