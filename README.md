@@ -12,6 +12,8 @@ This code generates a *standardized unfold map* as described in
 > Williams SE, Tobon-Gomez C, Zuluaga MA, Chubb H, Butakoff C, Karim R, Ahmed E, Camara O, Rhode KS.
 > J Interv Card Electrophysiol. 2017 Sep 7. doi: 10.1007/s10840-017-0281-3.
 
+> https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5633640/
+
 Please cite this reference when using this code.
 
 ## Pipeline
