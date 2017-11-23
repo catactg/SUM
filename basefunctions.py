@@ -4,7 +4,7 @@ import vtk
 import numpy as np
 from colormaps import *
 from vtk.util.numpy_support import numpy_to_vtk, vtk_to_numpy
-
+from vmtk import vmtkscripts
 #------------------------------------------------------------------------------
 # Linear algebra
 #------------------------------------------------------------------------------
@@ -1386,3 +1386,19 @@ def vmtksurfaceclipper(surface):
     computer.Surface = surface
     computer.Execute()
     return computer.Surface
+
+
+def vmtksurfacekiteremoval(surface):
+    computer = vmtkscripts.vmtkSurfaceKiteRemoval()
+    computer.Surface = surface
+    computer.Execute()
+    return computer.Surface
+
+def vmtksurfaceprojection(surface, refsurface):
+    """Project pointdata of refsurface onto surface"""
+    projector = vmtkscripts.vmtkSurfaceProjection()
+    projector.Surface = surface
+    projector.ReferenceSurface = refsurface
+    projector.Execute()
+    return projector.Surface
+

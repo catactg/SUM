@@ -1,7 +1,6 @@
 import os
 import numpy as np
 from basefunctions import *
-from smooth_voronoi import *
 from vtk.util.numpy_support import numpy_to_vtk, vtk_to_numpy
 import seedselector
 import csv
