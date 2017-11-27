@@ -100,12 +100,39 @@ python ./main.py --meshfile ./data/lat/mock_lat.vtk --datatype lat --use_glyph -
 ## Dependencies
 
 The scripts in this repository were successfully run with:
-- [Python] 2.7
-- [NumPy] 1.8
-- [VMTK] 1.3
-- [VTK] 7.0
+- [Python] 2.7.14
+- [NumPy] 1.13.3
+- [VMTK] 1.4
+- [VTK] 8.0.1
 - [MATLAB] R2017b
 - [MeshLab] 1.3
+
+### Python packages installation
+
+The easiest way to install everything you need using the VMTK [conda] package. It inclues Python, NumPy, VMTK and VTK.
+
+First, download miniconda and install it from terminal:
+```
+<a href="https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh" target="_blank">conda for python 3.x</a>
+sh Miniconda2-latest-MacOSX-x86_64.sh
+```
+
+Create an environment and activate it:
+```
+conda create --name vmtk
+source activate vmtk
+
+```
+
+Finally, install vmtk:
+```
+conda install -c vmtk/label/dev itk vtk vmtk
+```
+
+Anytime you wish to use vmtk (e.g. to run the code in this repository) you will need to activate the environment:
+```
+source activate vmtk
+```
 
 [LASC]:http://github.com/catactg/lasc
 [Python]:http://www.python.org
@@ -114,6 +141,7 @@ The scripts in this repository were successfully run with:
 [VTK]:http://www.vtk.org
 [MATLAB]:http://www.mathworks.com
 [MeshLab]:http://www.meshlab.net
+[conda]:https://conda.io/docs/
 
 
 ## License
