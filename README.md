@@ -113,7 +113,7 @@ The easiest way to install everything you need using the VMTK [conda] package. I
 
 First, download miniconda and install it from terminal:
 ```
-<a href="https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh" target="_blank">conda for python 3.x</a>
+wget https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh
 sh Miniconda2-latest-MacOSX-x86_64.sh
 ```
 
